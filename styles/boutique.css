@@ -1,0 +1,639 @@
+:root {
+    --Solid-color: #191d2b;
+    --Marron-color: #c94000;
+    --bleuciel-color: #28BADA;
+    --orange-color: #EB9B51;
+    --white-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ZenDots';
+    src: url(../polices/ZenDots.ttf);
+
+}
+
+@font-face {
+    font-family: 'pirulen';
+    src: url(../polices/pirulen.otf);
+}
+
+@font-face {
+    font-family: 'Roboto-BlackItalic';
+    src: url(../polices/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../polices/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-BoldItalic';
+    src: url(../polices/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url(../polices/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../polices/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../polices/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-MediumItalic';
+    src: url(../polices/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../polices/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(../polices/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-ThinItalic';
+    src: url(../polices/Roboto-ThinItalic.ttf);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121931;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+html {
+    position: relative;
+    z-index: 1;
+    background-color: var(--Solid-color);
+
+}
+
+.espace-vertical {
+    height: 100px;
+}
+
+.header-content {
+    height: 600px;
+    background: url(../images/img5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00000079;
+    background-blend-mode: color;
+}
+
+
+
+nav {
+    margin-left: 80px;
+    height: 150px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-right: 100px;
+    text-decoration: none;
+}
+
+nav ul {
+    margin-left: 300px;
+}
+
+nav ul li {
+    display: inline-flex;
+}
+
+nav ul li a {
+    font-family: ZenDots;
+    display: inline-flex;
+    font-size: 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.current-page {
+    border: #28BADA 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.logo {
+    color: var(--white-color);
+    font-family: ZenDots;
+}
+
+.logo a {
+    position: relative;
+    z-index: 1;
+}
+
+.logo .travel {
+    position: absolute;
+    z-index: 2;
+    margin-top: -61px;
+    margin-left: 155px;
+    font-family: ZenDots;
+    font-size: 17px;
+}
+
+.logo-img {
+    height: 100px;
+    width: 150px;
+}
+
+.singup {
+    background: var(--orange-color);
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+}
+
+.basket {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    float: right;
+    margin-right: 7%;
+    margin-top: -4%;
+}
+
+.tete {
+    margin-left: 5%;
+    width: 30%;
+}
+
+header h2 {
+    color: #fff;
+    font-family: ZenDots;
+
+    font-weight: lighter;
+}
+
+header p {
+    color: #fff;
+    font-family: Roboto-Medium;
+    font-size: small;
+    text-align: justify;
+}
+
+
+#first {
+    display: flex;
+}
+
+
+.imgcontainer {
+    flex: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.txtcontainer {
+    flex: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.txtcontainer p,
+.txtcontainer h2 {
+    color: var(--white-color);
+}
+
+.txtcontainer h2 {
+    font-family: ZenDots;
+    font-size: 20px;
+    width: 90%;
+}
+
+.txtcontainer p {
+    padding-top: 10px;
+    font-family: Roboto-Medium;
+    font-size: 14px;
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.product {
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    height: 10%;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    font-size: small;
+    font-family: pirulen;
+}
+
+
+
+#option {
+    display: flex;
+    justify-content: space-between;
+    background: var(--orange-color);
+    color: var(--white-color);
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+#option h4 {
+    font-size: 16px;
+    font-family: Roboto-Bold;
+}
+
+.option-item1 p,
+.option-item2 p,
+.option-item3 p {
+    margin-left: 60%;
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: Roboto-Bold;
+}
+
+.option-item1,
+.option-item2,
+.option-item3,
+.option-text {
+    height: 350px;
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#option button {
+    margin-left: 10%;
+    height: 30px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    font-family: Roboto-Bold;
+    letter-spacing: 2px;
+}
+
+.option-item1 {
+    background-image: url(../images/img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.option-item2 {
+    background: url(../images/img4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.option-item3 {
+    background: url(../images/img5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.option-text h2 {
+    font-family: ZenDots;
+    color: #000;
+    font-size: 20px;
+}
+
+.option-text p {
+    font-family: Roboto-Bold;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: normal;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+/* Styles pour la div parent */
+.imgcontain {
+    position: relative;
+    height: 500px;
+    width: 900px;
+}
+
+/* Styles pour l'image de fond (back) */
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.front {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.back {
+    height: 500px;
+    width: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#option {
+    display: flex;
+    justify-content: space-between;
+    background: var(--orange-color);
+    color: var(--white-color);
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+#option h4 {
+    font-size: 16px;
+    font-family: Roboto-Bold;
+}
+
+.option-item1 p,
+.option-item2 p,
+.option-item3 p {
+    margin-left: 60%;
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: Roboto-Bold;
+}
+
+.option-item1,
+.option-item2,
+.option-item3,
+.option-text {
+    height: 350px;
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#option button {
+    margin-left: 10%;
+    height: 30px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    font-family: Roboto-Bold;
+    letter-spacing: 2px;
+}
+
+.option-item1 {
+    background-image: url(../images/img27.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: fit-content;
+    background-position: center;
+}
+
+.option-item2 {
+    background: url(../images/img28.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: fit-content;
+    background-position: center;
+}
+
+.option-item3 {
+    background: url(../images/img29.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: fit-content;
+    background-position: center;
+}
+
+.option-text h2 {
+    font-family: ZenDots;
+    color: #000;
+    font-size: 20px;
+}
+
+.option-text p {
+    font-family: Roboto-Bold;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: normal;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+#comment .content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+#comment .container {
+    padding-top: 30px;
+}
+
+#comment .container h3 {
+    color: var(--white-color);
+    font-family: ZenDots;
+    letter-spacing: 2px;
+    margin-left: 40px;
+}
+
+#comment .commentor {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+}
+
+.comimg {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+#comment .commentor h4 {
+    color: var(--orange-color);
+    font-family: Roboto-Medium;
+    letter-spacing: 1px;
+    margin-left: 35px;
+}
+
+#comment .commentor span {
+    font-family: Roboto-thin;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 40px;
+
+}
+
+#comment .commentor p {
+    color: var(--white-color);
+    font-family: Roboto-thin;
+    text-align: center;
+}
+
+
+/***** style pour footer *****/
+.ligne {
+    margin-left: 60px;
+    height: 2px;
+    width: 90%;
+    border: #EB9B51 1px solid;
+}
+
+.Flèche {
+    margin-top: -15px;
+    margin-left: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+footer .container .social,
+footer .container .Privacy,
+footer .container .newsletter {
+    flex: 1;
+}
+
+footer .container .Privacy ul {
+    padding-left: 200px;
+    color: #fff;
+}
+
+.social p {
+    color: var(--white-color);
+    font-family: monospace;
+}
+
+.newsletter p {
+    color: var(--white-color);
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+footer h3 {
+    font-family: Roboto-Medium;
+    color: var(--white-color);
+    letter-spacing: 2px;
+}
+
+footer .container .Privacy ul li {
+    margin-top: 40px;
+}
+
+footer .container .Privacy ul li a {
+    color: var(--white-color);
+    font-family: Roboto-Regular;
+    text-decoration-line: none;
+}
+
+footer label {
+    color: var(--white-color);
+    font-family: Roboto-Regular;
+    font-size: 12px;
+}
+
+.check {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+.check:checked {
+    background-color: #ff0000;
+    border: 2px solid #ff0000;
+}
+
+.email {
+    border: none;
+    border-top-left-radius: 5px;
+    height: 30px;
+    border-bottom-left-radius: 5px;
+    width: 250px;
+}
+
+.envoyer {
+    width: 100px;
+    padding: 2px;
+    border: none;
+    height: 30px;
+    background: var(--orange-color);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
